@@ -1,0 +1,72 @@
+{
+  "id": "3220666",
+  "name": "鸽子自建站",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17103179",
+      "name": "code-s-slash-line",
+      "font_class": "code-s-slash-line",
+      "unicode": "e72c",
+      "unicode_decimal": 59180
+    },
+    {
+      "icon_id": "17103185",
+      "name": "css3-line",
+      "font_class": "css3-line",
+      "unicode": "e72d",
+      "unicode_decimal": 59181
+    },
+    {
+      "icon_id": "17104246",
+      "name": "github-line",
+      "font_class": "github-line",
+      "unicode": "e7d1",
+      "unicode_decimal": 59345
+    },
+    {
+      "icon_id": "17102571",
+      "name": "home-6-line",
+      "font_class": "home-6-line",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "17104901",
+      "name": "arrow-down-s-line",
+      "font_class": "arrow-down-s-line",
+      "unicode": "e83d",
+      "unicode_decimal": 59453
+    },
+    {
+      "icon_id": "17104924",
+      "name": "arrow-left-s-line",
+      "font_class": "arrow-left-s-line",
+      "unicode": "e842",
+      "unicode_decimal": 59458
+    },
+    {
+      "icon_id": "17104934",
+      "name": "arrow-right-s-line",
+      "font_class": "arrow-right-s-line",
+      "unicode": "e844",
+      "unicode_decimal": 59460
+    },
+    {
+      "icon_id": "17105011",
+      "name": "arrow-up-s-line",
+      "font_class": "arrow-up-s-line",
+      "unicode": "e857",
+      "unicode_decimal": 59479
+    },
+    {
+      "icon_id": "17105248",
+      "name": "ghost-smile-line",
+      "font_class": "ghost-smile-line",
+      "unicode": "e883",
+      "unicode_decimal": 59523
+    }
+  ]
+}
