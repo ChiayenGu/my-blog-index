@@ -15,76 +15,136 @@
 }
 body {
   background-image: linear-gradient(120deg, #e4eeff, #f1e8ec);
+  min-width: 550px;
 }
-body .container {
-  margin-top: 20px;
+body .mainbody {
+  margin-top: -4px;
+  padding-top: 15px;
+  min-height: 75vh;
   border: 5px solid #282c34;
   background-color: #fff;
   border-radius: 20px;
   position: relative;
 }
-body .container .mynav {
-  position: absolute;
-  top: 70px;
-  left: -110px;
+body .mainbody .cWidget {
+  min-width: 220px;
+  min-height: 378px;
 }
-body .container .mynav li {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: left; */
-  flex-basis: 200px;
-}
-body .container .mynav li .mynavLeft {
-  display: flex;
-  /* float: left; */
-  /* justify-content: ; */
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 50px;
-  /* min-width: 200px; */
-  height: 80px;
-  background-color: #282c34;
-  border-radius: 3px;
-  color: #fff;
-  font-weight: 100;
-  transform: rotateX(-20deg) rotateY(20deg);
-  perspective: 1000px;
-  transition: all 1s;
-}
-body .container .mynav li .mynavLeft .text,
-body .container .mynav li .mynavLeft .text i {
-  font-size: 36px;
-  margin-right: 8px;
-}
-body .container .mynav li .mynavLeft .descirption {
-  display: inline-block;
-  overflow: hidden;
-  /* flex: 1; */
-  width: 0;
-  height: 20px;
-  line-height: 20px;
-  font-size: 18px;
-  text-align: center;
-  transition: all 0.5s;
-}
-body .container .mynav li:hover .mynavLeft {
-  justify-content: space-between;
-  animation: scaleX100 0.5s forwards, floatLeft20px 1s 0.4s infinite alternate;
-}
-body .container .mynav li:hover .descirption {
-  padding-left: 50px;
-  /* display: inline-block; */
-  animation: widthto100 0.5s forwards;
-}
-body .container .showme {
+body .mainbody .cWidget .showme {
   width: 100%;
   height: 200px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
-  color: #fff;
-  font-style: italic;
 }
-body .container .showme span {
+body .mainbody .cWidget .showme span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .mainbody .cWidget div.getTimeStampColor .showme {
+  line-height: 200px;
+  font-style: italic;
   color: #ccc;
+}
+body .mainbody .cWidget div.changeExpression .showme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #add3d4;
+  color: #282c34;
+}
+body .mainbody .cWidget div.changeExpression .showme h5 {
+  font-size: 30px;
+}
+body .mainbody .cWidget div.changeExpression .showme h5 p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+body .mainbody .cWidget div.changeExpression .showme h5 p span {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 50px;
+  line-height: 1.2;
+}
+body .mainbody .cWidget div.changeExpression .showme h5 p span i {
+  line-height: 1;
+  position: absolute;
+  font-size: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -44%);
+}
+body .waitcode .pic {
+  margin-top: 10vh;
+  width: 250px;
+  height: 250px;
+  background-image: url(../img/waitCode.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .waitcode .text h4 {
+  color: #ccc !important;
+  font-weight: 100;
+}
+body iframe {
+  width: 100%;
+  height: 70vh;
+}
+.nav-tabs {
+  margin-left: 25px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  border: 0;
+}
+.nav-tabs > li a {
+  color: #fff;
+  background-color: #282c34;
+  border: 0 !important;
+}
+.nav-tabs > li a:hover,
+.nav-tabs > li a:focus {
+  border: 0 !important;
+  background-color: #fff !important;
+  color: #282c34 !important;
+}
+.nav-tabs > li:hover {
+  background-color: transparent !important;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active:hover,
+.nav-tabs > li.active :focus {
+  color: #282c34 !important;
+}
+.nav-tabs > li.active a {
+  background-color: #fff !important;
+  border: 5px solid #282c34 !important;
+  border-bottom: 0 !important;
+  border-radius: 10px 10px 0 0;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #c8c8c8;
 }

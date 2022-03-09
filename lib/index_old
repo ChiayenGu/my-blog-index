@@ -1,0 +1,40 @@
+<!-- <div class="mynav visible-lg-block">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="mynavLeft">
+                            <span class="text">
+                                    <i class="iconfont icon-home-6-line"></i>Home</span>
+                            <span class="descirption">一个导航我能玩一天</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="mynavLeft">
+                            <span class="text">
+                                    <i class="iconfont icon-css3-line"></i>CSS</span>
+                            <span class="descirption">学以致用的CSS小游戏</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="mynavLeft">
+                            <span class="text">
+                                    <i class="iconfont icon-github-line"></i>Github</span>
+                            <span class="descirption">没有项目 别看了</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="mynavLeft">
+                            <span class="text">
+                                    <i class="iconfont icon-ghost-smile-line"></i>Others</span>
+                            <span class="descirption">其他内容</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
