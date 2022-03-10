@@ -1,237 +1,279 @@
+// out: ./
+
 // 变量
+
+
 @colorBlack: #282c34;
 @colorWhite: #fff;
 @colorGray: #ccc;
 @colorTransparent: transparent;
 @colorBlue: #e4eeff;
-@colorGrayPink:#f1e8ec;
+@colorGrayPink: #f1e8ec;
 
 // 动画区域
 
 @keyframes scaleX100 {
-    to {
-        transform: scale(1);
-    }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes floatLeft20px {
-    to {
-        transform: translateX(20px);
-    }
+  to {
+    transform: translateX(20px);
+  }
 }
 
 @keyframes widthto100 {
-    to {
-        width: 100%;
-    }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes spriteAnimation {
+  from {
+    background-position: left;
+  }
+
+  to {
+    background-position: right;
+  }
 }
 
 body {
-    background-image: linear-gradient(120deg, #e4eeff, #f1e8ec);
-    min-width: 550px;
-    // 自定义导
+  background-image: linear-gradient(120deg, #e4eeff, #f1e8ec);
+  min-width: 550px;
+  // 自定义导
 
 
+  .mainbody {
+    margin-top: -4px;
+    padding-top: 15px;
+    min-height: 75vh;
+    border: 5px solid @colorBlack;
+    background-color: @colorWhite;
+    border-radius: 20px;
+    position: relative;
 
 
-    .mainbody {
-        margin-top: -4px;
-        padding-top: 15px;
-        min-height: 75vh;
-        border: 5px solid @colorBlack;
-        background-color: @colorWhite;
-        border-radius: 20px;
-        position: relative;
+    // 效果展示区
+    .cWidget {
+      min-width: 220px;
+      min-height: 378px;
 
-
-
-        // 效果展示区
-        .cWidget {
-            min-width: 220px;
-            min-height: 378px;
-
-            .showme {
-                width: 100%;
-                height: 200px;
-                border: 1px solid @colorGray;
-                box-sizing: border-box;
-                // background-color: pink;
-                text-align: center;
-                vertical-align: middle;
-
-
-
-                span {
-
-                    display: block;
-
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-            }
-            //获取时间对应的色值
-            div.getTimeStampColor {
-                .showme {
-                    line-height: 200px;
-                    font-style: italic;
-                    color: @colorGray;
-
-                }
-            }
-            //改变颜文字
-            div.changeExpression {
-                .showme {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgb(173, 211, 212);
-                    color: @colorBlack;
-
-                    h5 {
-                        font-size: 30px;
-                        // color: @colorWhite;
-
-                        p {
-                            display: inline-block;
-                            vertical-align: middle;
-                            line-height: 1;
-
-
-                            span {
-                                position: relative;
-                                display: inline-block;
-                                vertical-align: bottom;
-                                font-size: 50px;
-                                line-height: 1.2;
-
-                                i {
-                                    line-height: 1;
-                                    position: absolute;
-                                    font-size: 55px;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -44%);
-                                }
-                            }
-
-                        }
-                    }
-                }
-            }
-
-            //画三角形
-            div.drowATriangle{
-                .showme{
-                    height: 200px;
-                    //border-bottom: @colorTransparent solid 200px ;
-                    //border-left: @colorTransparent solid 200px ;
-                }
-
-                .triangleStyle{
-                    border-bottom: 200px solid @colorTransparent;
-                    border-right: 200px solid @colorBlue;
-                }
-            }
-        }
-    }
-
-
-    .waitcode {
-
-        .pic {
-            margin-top: 10vh;
-            width: 250px;
-            height: 250px;
-            background-image: url(../img/waitCode.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .text {
-            h4 {
-                color: @colorGray  !important;
-                font-weight: 100;
-            }
-        }
-    }
-
-    iframe {
+      .showme {
         width: 100%;
-        height: 70vh;
+        height: 200px;
+        border: 1px solid @colorGray;
+        box-sizing: border-box;
+        // background-color: pink;
+        text-align: center;
+        vertical-align: middle;
 
+
+        span {
+
+          display: block;
+
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      //获取时间对应的色值
+      div.getTimeStampColor {
+        .showme {
+          line-height: 200px;
+          font-style: italic;
+          color: @colorGray;
+
+        }
+      }
+
+      //改变颜文字
+      div.changeExpression {
+        .showme {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(173, 211, 212);
+          color: @colorBlack;
+
+          h5 {
+            font-size: 30px;
+            // color: @colorWhite;
+
+            p {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 1;
+
+
+              span {
+                position: relative;
+                display: inline-block;
+                vertical-align: bottom;
+                font-size: 50px;
+                line-height: 1.2;
+
+                i {
+                  line-height: 1;
+                  position: absolute;
+                  font-size: 55px;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -44%);
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      //画三角形
+      div.drowATriangle {
+        .showme {
+          height: 200px;
+          //border-bottom: @colorTransparent solid 200px ;
+          //border-left: @colorTransparent solid 200px ;
+        }
+
+        .triangleStyle {
+          border-bottom: 200px solid @colorTransparent;
+          border-right: 200px solid @colorBlue;
+        }
+      }
+
+      //    精灵图动画
+      div.spriteAnimation {
+        .showme {
+          position: relative;
+          background-color: #fcfcfc;
+
+          .pic {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 180px;
+            transform: translate(-50%, -50%);
+            // background-color: pink;
+            background-image: url(../img/sprite01.jpg);
+            background-position: 0 0;
+            background-size: auto 180px;
+          }
+
+          .animation {
+            animation: spriteAnimation infinite 1.5s steps(21);
+
+            &:hover {
+              animation-play-state: paused;
+            }
+          }
+        }
+
+      }
     }
+  }
+
+
+  .waitcode {
+
+    .pic {
+      margin-top: 10vh;
+      width: 250px;
+      height: 250px;
+      background-image: url(../img/waitCode.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .text {
+      h4 {
+        color: @colorGray  !important;
+        font-weight: 100;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 70vh;
+
+  }
 }
 
 
 // 修改人家的hover
 
 .nav-tabs {
-    margin-left: 25px;
-    margin-top: 15px;
-    position: relative;
-    z-index: 2;
-    border: 0;
+  margin-left: 25px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  border: 0;
 
-    >li {
+  >li {
 
-        a {
-            color: @colorWhite;
-            background-color: @colorBlack;
-            border: 0 !important;
+    a {
+      color: @colorWhite;
+      background-color: @colorBlack;
+      border: 0 !important;
 
-            &:hover,
-            &:focus {
-                border: 0 !important;
-                background-color: @colorWhite  !important;
-                color: @colorBlack  !important;
-            }
-        }
-
-        &:hover {
-            background-color: transparent !important;
-        }
-
-        &.active {
-
-            >a,
-            &:hover,
-            & :focus {
-
-
-                color: @colorBlack  !important;
-            }
-
-            a {
-                background-color: @colorWhite  !important;
-                border: 5px solid @colorBlack  !important;
-                border-bottom: 0 !important;
-                border-radius: 10px 10px 0 0;
-            }
-        }
+      &:hover,
+      &:focus {
+        border: 0 !important;
+        background-color: @colorWhite  !important;
+        color: @colorBlack  !important;
+      }
     }
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    &.active {
+
+      >a,
+      &:hover,
+      & :focus {
+
+
+        color: @colorBlack  !important;
+      }
+
+      a {
+        background-color: @colorWhite  !important;
+        border: 5px solid @colorBlack  !important;
+        border-bottom: 0 !important;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
 }
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background-color: #F5F5F5;
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
 }
 
 /*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: #F5F5F5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
 }
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
-    background-color: #c8c8c8;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  background-color: #c8c8c8;
 }

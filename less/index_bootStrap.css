@@ -13,6 +13,14 @@
     width: 100%;
   }
 }
+@keyframes spriteAnimation {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
 body {
   background-image: linear-gradient(120deg, #e4eeff, #f1e8ec);
   min-width: 550px;
@@ -86,6 +94,27 @@ body .mainbody .cWidget div.drowATriangle .triangleStyle {
   border-bottom: 200px solid transparent;
   border-right: 200px solid #e4eeff;
 }
+body .mainbody .cWidget div.spriteAnimation .showme {
+  position: relative;
+  background-color: #fcfcfc;
+}
+body .mainbody .cWidget div.spriteAnimation .showme .pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/sprite01.jpg);
+  background-position: 0 0;
+  background-size: auto 180px;
+}
+body .mainbody .cWidget div.spriteAnimation .showme .animation {
+  animation: spriteAnimation infinite 1.5s steps(21);
+}
+body .mainbody .cWidget div.spriteAnimation .showme .animation:hover {
+  animation-play-state: paused;
+}
 body .waitcode .pic {
   margin-top: 10vh;
   width: 250px;
@@ -155,4 +184,3 @@ body iframe {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   background-color: #c8c8c8;
 }
-/*# sourceMappingURL=index_bootStrap.css.map */

@@ -8,137 +8,151 @@
     <title>对酒当鸽 - 鸽子的前端学习之路</title>
     <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
     <link rel="stylesheet" href="./lib/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="less/index_bootStrap.css">
+    <link rel="stylesheet" href="./less/index_bootStrap.css">
 </head>
 
 <body>
-<!-- 头部导航 -->
-<div class="container header-nav">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i
+    <!-- 头部导航 -->
+    <div class="container header-nav">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i
                 class="iconfont icon-home-6-line"></i> Home</a></li>
-        <li role="presentation"><a href="#css" aria-controls="css" role="tab" data-toggle="tab"><i
+            <li role="presentation"><a href="#css" aria-controls="css" role="tab" data-toggle="tab"><i
                 class="iconfont icon-css3-line"></i> CSS+JS的小游戏</a></li>
-        <li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab"><i
+            <li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab"><i
                 class="iconfont icon-github-line"></i> Github</a>
-        </li>
-        <li role="presentation"><a href="#others" aria-controls="others" role="tab" data-toggle="tab"><i
+            </li>
+            <li role="presentation"><a href="#others" aria-controls="others" role="tab" data-toggle="tab"><i
                 class="iconfont icon-ghost-smile-line"></i> Log</a>
 
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
-            <div class="container mainbody waitcode">
-                <!-- 页面组件 -->
-                <!-- 首页 -->
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <div class="pic center-block">
-                        </div>
-                        <div class="text">
-                            <h4 class="text-center">这里还是一片等待开发的荒原</h4>
-                            <h4 class="text-center">耐心等待 总会开花的</h4>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="container mainbody waitcode ">
+                    <!-- 页面组件 -->
+                    <!-- 首页 -->
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="pic center-block">
+                            </div>
+                            <div class="text">
+                                <h4 class="text-center">这里还是一片等待开发的荒原</h4>
+                                <h4 class="text-center">耐心等待 总会开花的</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane " id="css">
-            <div class="container mainbody">
-                <!-- 页面组件 -->
-                <!-- CSS -->
-                <div class="row">
-                    <!-- 现在颜色 js小游戏 -->
-                    <div class="col-sm-4 col-md-4 col-lg-3">
-                        <div class="thumbnail cWidget">
-                            <div class="caption getTimeStampColor">
-                                <div class="showme">
-                                    <span>现在的颜色是什么呢？</span>
+            <div role="tabpanel" class="tab-pane" id="css">
+                <div class="container mainbody">
+                    <!-- 页面组件 -->
+                    <!-- CSS -->
+                    <div class="row">
+                        <!-- 现在颜色 js小游戏 -->
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="thumbnail cWidget">
+                                <div class="caption getTimeStampColor">
+                                    <div class="showme">
+                                        <span>现在的颜色是什么呢？</span>
+                                    </div>
+                                    <h3>现在颜色</h3>
+                                    <p>将时间戳映射到色值上，获取每一秒都不同的颜色。</p>
+                                    <p><a href="#" class="btn btn-default getTimeStampColor" role="button">尝试一下</a>
+                                    </p>
                                 </div>
-                                <h3>现在颜色</h3>
-                                <p>将时间戳映射到色值上，获取每一秒都不同的颜色。</p>
-                                <p><a href="#" class="btn btn-default getTimeStampColor" role="button">尝试一下</a>
-                                </p>
                             </div>
                         </div>
-                    </div>
-                    <!-- 颜文字小游戏 -->
-                    <div class="col-sm-4 col-md-4 col-lg-3">
-                        <div class="thumbnail cWidget">
-                            <div class="caption changeExpression">
-                                <div class="showme">
-                                    <h5>(๑
-                                        <p><span>○ <i>•</i></span>▽<span>○ <i>•</i> </span></p> ๑)
-                                    </h5>
+                        <!-- 颜文字小游戏 -->
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="thumbnail cWidget">
+                                <div class="caption changeExpression">
+                                    <div class="showme">
+                                        <h5>(๑
+                                            <p><span>○ <i>•</i></span>▽<span>○ <i>•</i> </span></p> ๑)
+                                        </h5>
+                                    </div>
+                                    <h3>好奇的颜文字</h3>
+                                    <p>是谁的眼神锁定我：试着用鼠标改变它的表情吧！</p>
+                                    <p><a href="#" class="btn btn-default changeExpression" role="button">尝试一下</a>
+                                    </p>
                                 </div>
-                                <h3>好奇的颜文字</h3>
-                                <p>是谁的眼神锁定我：试着用鼠标改变它的表情吧！</p>
-                                <p><a href="#" class="btn btn-default changeExpression" role="button">尝试一下</a>
-                                </p>
                             </div>
                         </div>
-                    </div>
-                    <!-- 绘制一个三角形吧-->
-                    <div class="col-sm-4 col-md-4 col-lg-3">
-                        <div class="thumbnail cWidget">
-                            <div class="caption drowATriangle ">
-                                <div class="showme Triangle triangleStyle">
+                        <!-- 绘制一个三角形吧-->
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="thumbnail cWidget">
+                                <div class="caption drowATriangle ">
+                                    <div class="showme Triangle triangleStyle">
 
+                                    </div>
+                                    <h3>画一个三角形</h3>
+                                    <p>Border的妙用了咱就是说，开发出来一些奇妙的作用。</p>
+                                    <p><a href="#" class="btn btn-default drowATriangle" role="button">换个方向</a>
+                                    </p>
                                 </div>
-                                <h3>画一个三角形</h3>
-                                <p>Border的妙用了咱就是说，开发出来一些奇妙的作用</p>
-                                <p><a href="#" class="btn btn-default drowATriangle" role="button">换个方向</a>
-                                </p>
+                            </div>
+                        </div>
+                        <!--                    精灵图动画-->
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="thumbnail cWidget ">
+                                <div class="caption spriteAnimation">
+                                    <div class="showme">
+                                        <div class="pic"></div>
+                                    </div>
+                                    <h3>Get Down</h3>
+                                    <p>点击开始跳舞——悬停学姿势。css动画真的很方便。</p>
+                                    <p><a href="#" class="btn btn-default spriteAnimation" role="button">添加动画</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- css -->
+                    <!-- JS -->
+                    <!-- 其他内容 -->
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="github">
+                <div class="container mainbody waitcode">
+                    <!-- 页面组件 -->
+                    <!-- github 等待开发 -->
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <div class="pic center-block">
+                            </div>
+                            <div class="text">
+                                <h4 class="text-center">这里还是一片等待开发的荒原</h4>
+                                <h4 class="text-center">耐心等待 总会开花的</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- css -->
-                <!-- JS -->
-                <!-- 其他内容 -->
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="github">
-            <div class="container mainbody waitcode">
-                <!-- 页面组件 -->
-                <!-- github 等待开发 -->
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <div class="pic center-block">
-                        </div>
-                        <div class="text">
-                            <h4 class="text-center">这里还是一片等待开发的荒原</h4>
-                            <h4 class="text-center">耐心等待 总会开花的</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="others">
+            <div role="tabpanel" class="tab-pane" id="others">
 
-            <div class="container mainbody">
-                <!-- 页面组件 -->
-                <!-- 开发日志 -->
-                <div class="row">
-                    <div class="col-sm-12 ">
-                        <!-- <div class="pic center-block">
+                <div class="container mainbody">
+                    <!-- 页面组件 -->
+                    <!-- 开发日志 -->
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <!-- <div class="pic center-block">
                         </div>
                         <div class="text">
                             <h4 class="text-center">这里还是一片等待开发的荒原</h4>
                             <h4 class="text-center">耐心等待 总会开花的</h4>
                         </div> -->
-                        <iframe src="./lib/readme.html" frameborder="0"></iframe>
+                            <iframe src="./lib/readme.html" frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="./lib/js/jquery.js"></script>
-<script src="./lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
-<script src="./lib/js/index.js"></script>
+    <script src="./lib/js/jquery.js"></script>
+    <script src="./lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./lib/js/index.js"></script>
 </body>
 
 </html>
