@@ -83,7 +83,7 @@ body .waitcode .pic {
   margin-top: 10vh;
   width: 250px;
   height: 250px;
-  background-image: url(../img/waitCode.png);
+  background-image: url(waitCode.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

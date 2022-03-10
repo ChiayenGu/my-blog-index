@@ -3,6 +3,8 @@
 @colorWhite: #fff;
 @colorGray: #ccc;
 @colorTransparent: transparent;
+@colorBlue: #e4eeff;
+@colorGrayPink:#f1e8ec;
 
 // 动画区域
 
@@ -68,7 +70,7 @@ body {
                     text-overflow: ellipsis;
                 }
             }
-
+            //获取时间对应的色值
             div.getTimeStampColor {
                 .showme {
                     line-height: 200px;
@@ -77,7 +79,7 @@ body {
 
                 }
             }
-
+            //改变颜文字
             div.changeExpression {
                 .showme {
                     display: flex;
@@ -117,13 +119,25 @@ body {
                     }
                 }
             }
+
+            //画三角形
+            div.drowATriangle{
+                .showme{
+                    height: 200px;
+                    //border-bottom: @colorTransparent solid 200px ;
+                    //border-left: @colorTransparent solid 200px ;
+                }
+
+                .triangleStyle{
+                    border-bottom: 200px solid @colorTransparent;
+                    border-right: 200px solid @colorBlue;
+                }
+            }
         }
     }
 
 
     .waitcode {
-
-
 
         .pic {
             margin-top: 10vh;
